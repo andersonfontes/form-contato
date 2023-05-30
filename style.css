@@ -29,11 +29,11 @@ label, input, textarea, button{
     margin:10px;
     padding: 15px;
     border-radius: 5px;
+    border: 1px solid transparent;
 }
 input, textarea {
     color: #333333;
 }
-
 
 button{
     background-color: lightskyblue;
@@ -46,8 +46,29 @@ aside{
     width: 40%;
 }
 
-input, textarea, button :hover{
-    border-color:  #5555ff;
-    border: 10px;
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    outline: 5px;
+    outline-color:  #5555ff;    
+    cursor: pointer;    
+}
+
+button {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;    
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: 0.2s;
+  }
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #09d;
 }
