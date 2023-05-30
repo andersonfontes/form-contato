@@ -33,6 +33,8 @@ label, input, textarea, button{
 }
 input, textarea {
     color: #333333;
+    transition: 0.2s;
+    padding: 1rem;
 }
 
 button{
